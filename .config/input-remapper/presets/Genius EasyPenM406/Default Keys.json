@@ -1,0 +1,20 @@
+{
+    "mapping": {
+        "1,182,1": [
+            "KEY_LEFTCTRL + Z",
+            "keyboard"
+        ],
+        "1,131,1": [
+            "KEY_LEFTCTRL + Shift_L + Z",
+            "keyboard"
+        ],
+        "1,418,1": [
+            "KEY_PAGEDOWN",
+            "keyboard"
+        ],
+        "1,419,1": [
+            "KEY_PAGEUP",
+            "keyboard"
+        ]
+    }
+}
