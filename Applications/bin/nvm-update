@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#
+# A simple script to update NVM.
+# by Salman Hasan
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
