@@ -50,8 +50,7 @@ if status is-interactive
     alias cls="clear"                               # adds clear cmd from Windows
     alias psa="ps auxf"                             # shows all processes
     alias jctl="journalctl -p 3 -xb"                # get error messages from journalctl
-    alias pac-clean="sudo pacman -Rns (pacman -Qtdq)" # remove orphaned packages
-    alias yay-clean="yay -Yc"                       # clean unneeded dependencies
+    alias cleanup="yay -Yc"                         # clean unneeded dependencies
     alias dir-open="xdg-open . &> /dev/null"        # nice alias to open folder
     alias icat="kitty icat"                         # alias to preview images in terminal
 
