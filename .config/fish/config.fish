@@ -50,8 +50,10 @@ if status is-interactive
     alias cls="clear"                               # adds clear cmd from Windows
     alias psa="ps auxf"                             # shows all processes
     alias jctl="journalctl -p 3 -xb"                # get error messages from journalctl
-    alias cleanup="sudo pacman -Rns (pacman -Qtdq)" # remove orphaned packages
-    alias dir-open="xdg-open ."                     # nice alias to open folder
+    alias pac-clean="sudo pacman -Rns (pacman -Qtdq)" # remove orphaned packages
+    alias yay-clean="yay -Yc"                       # clean unneeded dependencies
+    alias dir-open="xdg-open . &> /dev/null"        # nice alias to open folder
+    alias icat="kitty icat"                         # alias to preview images in terminal
 
     # get fastest mirrors
     alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
