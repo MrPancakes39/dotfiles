@@ -12,6 +12,7 @@ if status is-interactive
     set TERM "kitty"                    # Sets the terminal type
     set EDITOR "nvim"                   # $EDITOR use Neovim
     set VISUAL "code"                   # $VISUAL use VSCode
+    set SSH_AUTH_SOCK "$XDG_RUNTIME_DIR/ssh-agent.socket"
 
     ### FUNCTIONS ###
     function mkcd
@@ -63,6 +64,13 @@ if status is-interactive
     # bare git repo alias for dotfiles
     # https://www.atlassian.com/git/tutorials/dotfiles
     alias config="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"
+
+    # start SSH Agent 
+    if test -z (pgrep ssh-agent | string collect)
+        eval (ssh-agent -c)
+        set -Ux SSH_AUTH_SOCK $SSH_AUTH_SOCK
+        set -Ux SSH_AGENT_PID $SSH_AGENT_PID
+    end
 
     # termbin
     alias tb="nc termbin.com 9999"
