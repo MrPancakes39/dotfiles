@@ -1,7 +1,9 @@
 {
     "version": "1.4.2",
     "autoload": {
-        "Genius EasyPenM406": "Default Keys"
+        "Genius EasyPenM406": "Default Keys",
+        "AT Translated Set 2 keyboard": "Tablet Shortcuts",
+        "WP9620 Pad": "Tablet Remapped"
     },
     "macros": {
         "keystroke_sleep_ms": 10
