@@ -51,7 +51,7 @@ if status is-interactive
     alias cls="clear"                               # adds clear cmd from Windows
     alias psa="ps auxf"                             # shows all processes
     alias jctl="journalctl -p 3 -xb"                # get error messages from journalctl
-    alias cleanup="yay -Yc"                         # clean unneeded dependencies
+    alias cleanup="paru -c"                         # clean unneeded dependencies
     alias dir-open="xdg-open . &> /dev/null"        # nice alias to open folder
     alias icat="kitty icat"                         # alias to preview images in terminal
 
