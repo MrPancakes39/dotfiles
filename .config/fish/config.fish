@@ -72,6 +72,9 @@ if status is-interactive
         set -Ux SSH_AGENT_PID $SSH_AGENT_PID
     end
 
+    # nvm
+    alias nvm-node-upgrade="nvm install --lts --reinstall-packages-from=current"
+
     # termbin
     alias tb="nc termbin.com 9999"
 
