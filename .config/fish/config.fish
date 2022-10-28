@@ -23,7 +23,7 @@ if status is-interactive
     ### ALIASES ### 
 
     # editing config file
-    alias fshconf="nvim ~/.config/fish/config.fish"
+    alias fshconf="lvim ~/.config/fish/config.fish"
     alias reload="source ~/.config/fish/config.fish"
 
     # file related aliases
